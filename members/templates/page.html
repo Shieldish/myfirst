@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Page</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 3em;
+            text-shadow: 2px 2px 8px #fff176;
+            margin-bottom: 10px;
+        }
+        .fun-box {
+            background: #fff9c4;
+            border: 3px dashed #ffb74d;
+            border-radius: 20px;
+            padding: 40px 60px;
+            box-shadow: 0 8px 24px rgba(255, 183, 77, 0.2);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .fun-box:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
+        .emoji {
+            font-size: 2.5em;
+            animation: bounce 1s infinite alternate;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        @keyframes bounce {
+            to { transform: translateY(-20px); }
+        }
+        button {
+            background: #ffb74d;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 28px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(255, 183, 77, 0.2);
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Fun Page!</h1>
+    <div class="fun-box">
+        <div class="emoji">🎉😄✨</div>
+        <p>Enjoy some playful colors and bouncy emojis!</p>
+        <button onclick="alert('Have fun! 🎈')">Click Me!</button>
+    </div>
+</body>
+</html>
